@@ -13,7 +13,8 @@ $accent-color2: #FFBA6A; //ラベル色
 $opacity: 0.7; // 透過度
 
 // フォント
-$font-family-base: "";// ベースフォント
+$font-family-base: 'Noto Sans JP', sans-serif;// ベースフォント
+$font-family-sub: 'Noto Serif JP', serif; //サブフォント
 $font-size-base: 16px; // ベースフォントサイズ
 $font-weight-base: 400; // ベースフォントウェイト
 $lh: 1.6; // ベース行間
