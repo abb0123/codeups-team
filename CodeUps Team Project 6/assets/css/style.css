@@ -677,7 +677,8 @@ summary {
 }
 
 .p-blog-card__date {
-	font-size: 0.875rem;
+	color: #fff;
+	font-size: 1.125rem;
 }
 
 .p-blog__cards {
