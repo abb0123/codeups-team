@@ -1,0 +1,20 @@
+.c-blog-title3{
+  color: #fff;
+  font-size: rem(18);
+  line-height: rem(26);
+  letter-spacing: (2);
+  border-bottom: rem(3) solid #fff;
+  display: inline-block;
+  position: relative;
+}
+
+.c-blog-title3::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: rem(-3.4);
+  width: 30%;
+  height: rem(3);
+  z-index: 10;
+  background: #FFEA2E;
+}

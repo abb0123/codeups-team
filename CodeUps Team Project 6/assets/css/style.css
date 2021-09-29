@@ -586,6 +586,12 @@ summary {
 	width: 100%;
 }
 
+.c-blog-text {
+	color: #fff;
+	letter-spacing: 0.025rem;
+	line-height: 2.1875rem;
+}
+
 .c-btn {
 	background-color: black;
 	color: white;
@@ -595,6 +601,45 @@ summary {
 .c-test {
 	color: red;
 	font-size: 1.25rem;
+}
+
+.c-blog-title {
+	color: #fff;
+	font-size: 1.4375rem;
+	font-weight: 500;
+	letter-spacing: 0.025rem;
+	line-height: 2.1875rem;
+}
+
+.c-blog-title2 {
+	border-left: 0.1875rem solid #fff;
+	color: #fff;
+	font-size: 1.25rem;
+	font-weight: 500;
+	letter-spacing: 0.125rem;
+	line-height: 1.8125rem;
+	padding-left: 0.4375rem;
+}
+
+.c-blog-title3 {
+	border-bottom: 0.1875rem solid #fff;
+	color: #fff;
+	display: inline-block;
+	font-size: 1.125rem;
+	letter-spacing: 2;
+	line-height: 1.625rem;
+	position: relative;
+}
+
+.c-blog-title3::before {
+	background: #FFEA2E;
+	bottom: -0.2125rem;
+	content: "";
+	height: 0.1875rem;
+	left: 0;
+	position: absolute;
+	width: 30%;
+	z-index: 10;
 }
 
 .p-blog-card {
@@ -639,6 +684,28 @@ summary {
 	display: flex;
 	flex-wrap: wrap;
 	max-width: 68.6875rem;
+}
+
+.p-blog-listDot li {
+	color: #fff;
+	letter-spacing: 0.4;
+	line-height: 2.1875rem;
+	list-style-type: disc;
+	margin-left: 1.5rem;
+}
+
+.p-blog-listNumber {
+	color: #fff;
+	counter-reset: number;
+	letter-spacing: 0.4;
+	line-height: 2.1875rem;
+	position: relative;
+}
+
+.p-blog-listNumber li::before {
+	content: counter(number);
+	counter-increment: number;
+	padding-right: 5px;
 }
 
 .p-test {
