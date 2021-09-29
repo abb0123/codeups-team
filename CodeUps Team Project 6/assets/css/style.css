@@ -597,6 +597,50 @@ summary {
 	font-size: 1.25rem;
 }
 
+.p-blog-card {
+	width: calc(33.3% - 24px * 2 / 3);
+}
+
+.p-blog-card:not(:nth-child(3n + 1)) {
+	margin-left: 1.5rem;
+}
+
+.p-blog-card__content {
+	background: #fff;
+	padding: 1rem 1.5rem;
+}
+
+.p-blog-card__title {
+	font-size: 1.125rem;
+	font-weight: 500;
+	line-height: 2.1875rem;
+}
+
+.p-blog-card__text {
+	font-size: 0.875rem;
+	line-height: 1.625rem;
+}
+
+.p-blog-card__bottom {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 0.25rem;
+}
+
+.p-blog-card__tag {
+	background: #FFEA2E;
+}
+
+.p-blog-card__date {
+	font-size: 0.875rem;
+}
+
+.p-blog__cards {
+	display: flex;
+	flex-wrap: wrap;
+	max-width: 68.6875rem;
+}
+
 .p-test {
 	color: red;
 	font-size: 1.25rem;
