@@ -1,6 +1,6 @@
 .c-btn {
   font-size: rem(20);
-  font-weight: $medium;
+  font-weight: $font-weight-base;
   letter-spacing: rem(2);
   color: $text-white;
   background: $background-gray;
@@ -13,7 +13,7 @@
   position: relative;
   overflow: hidden;
 
-  @include mq("md") {
+  @include mq("tab") {
     font-size: rem(16);
     line-height: rem(54);
     letter-spacing: rem(2);
@@ -37,7 +37,7 @@
 .c-btn:hover {
   color: $text-white;
 
-  @include mq("md") {
+  @include mq("tab") {
     color: $background-gray;
   }
 }

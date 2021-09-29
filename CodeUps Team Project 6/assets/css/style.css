@@ -588,9 +588,41 @@ summary {
 }
 
 .c-btn {
-	background-color: black;
-	color: white;
-	padding: 0.625rem 2.5rem;
+	background: #333;
+	border: 0.0625rem solid #fff;
+	color: #fff;
+	display: inline-block;
+	font-size: 1.25rem;
+	font-weight: 400;
+	letter-spacing: 0.125rem;
+	max-width: 22.5rem;
+	overflow: hidden;
+	padding: 0.625rem 5rem;
+	position: relative;
+	text-align: center;
+	width: 100%;
+}
+
+.c-btn::before {
+	background: #fff;
+	content: "";
+	height: 100%;
+	left: -100%;
+	position: absolute;
+	top: 0;
+	transition: all 0.3s ease;
+	width: 100%;
+	z-index: -1;
+}
+
+.c-btn:focus,
+.c-btn:hover {
+	color: #fff;
+}
+
+.c-btn:focus::before,
+.c-btn:hover::before {
+	left: 0;
 }
 
 .c-section-title {
@@ -688,6 +720,18 @@ html {
 	max-width: 1150px;
 	padding-left: 25px;
 	padding-right: 25px;
+}
+
+.c-btn {
+	font-size: 1rem;
+	letter-spacing: 0.125rem;
+	line-height: 3.375rem;
+	padding: 0.1875rem 6.25rem;
+}
+
+.c-btn:focus,
+.c-btn:hover {
+	color: #333;
 }
 
 .c-section-title {
