@@ -336,7 +336,10 @@ body {
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 	background: #111;
+<<<<<<< HEAD
+=======
 	color: #fff;
+>>>>>>> 1789326453739fd84ef50633af9b89dc200a735b
 	font-family: "Noto Sans JP", sans-serif;
 	font-size: 16px;
 	font-weight: 400;
@@ -587,6 +590,128 @@ summary {
 	width: 100%;
 }
 
+<<<<<<< HEAD
+.c-blog-text {
+	color: #fff;
+	letter-spacing: 0.025rem;
+	line-height: 2.1875rem;
+}
+
+.c-btn {
+	background-color: black;
+	color: white;
+	padding: 0.625rem 2.5rem;
+}
+
+.c-test {
+	color: red;
+	font-size: 1.25rem;
+}
+
+.c-blog-title {
+	color: #fff;
+	font-size: 1.4375rem;
+	font-weight: 500;
+	letter-spacing: 0.025rem;
+	line-height: 2.1875rem;
+}
+
+.c-blog-title2 {
+	border-left: 0.1875rem solid #fff;
+	color: #fff;
+	font-size: 1.25rem;
+	font-weight: 500;
+	letter-spacing: 0.125rem;
+	line-height: 1.8125rem;
+	padding-left: 0.4375rem;
+}
+
+.c-blog-title3 {
+	border-bottom: 0.1875rem solid #fff;
+	color: #fff;
+	display: inline-block;
+	font-size: 1.125rem;
+	letter-spacing: 2;
+	line-height: 1.625rem;
+	position: relative;
+}
+
+.c-blog-title3::before {
+	background: #FFEA2E;
+	bottom: -0.2125rem;
+	content: "";
+	height: 0.1875rem;
+	left: 0;
+	position: absolute;
+	width: 30%;
+	z-index: 10;
+}
+
+.p-blog-card {
+	width: calc(33.3% - 24px * 2 / 3);
+}
+
+.p-blog-card:not(:nth-child(3n + 1)) {
+	margin-left: 1.5rem;
+}
+
+.p-blog-card__content {
+	background: #fff;
+	padding: 1rem 1.5rem;
+}
+
+.p-blog-card__title {
+	font-size: 1.125rem;
+	font-weight: 500;
+	line-height: 2.1875rem;
+}
+
+.p-blog-card__text {
+	font-size: 0.875rem;
+	line-height: 1.625rem;
+}
+
+.p-blog-card__bottom {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 0.25rem;
+}
+
+.p-blog-card__tag {
+	background: #FFEA2E;
+}
+
+.p-blog-card__date {
+	font-size: 0.875rem;
+}
+
+.p-blog__cards {
+	display: flex;
+	flex-wrap: wrap;
+	max-width: 68.6875rem;
+}
+
+.p-blog-listDot li {
+	color: #fff;
+	letter-spacing: 0.4;
+	line-height: 2.1875rem;
+	list-style-type: disc;
+	margin-left: 1.5rem;
+}
+
+.p-blog-listNumber {
+	color: #fff;
+	counter-reset: number;
+	letter-spacing: 0.4;
+	line-height: 2.1875rem;
+	position: relative;
+}
+
+.p-blog-listNumber li::before {
+	content: counter(number);
+	counter-increment: number;
+	padding-right: 5px;
+=======
 .c-btn {
 	background: #333;
 	border: 0.0625rem solid #fff;
@@ -668,6 +793,7 @@ summary {
 .c-test {
 	margin: 120px 0;
 	padding: 40px 0;
+>>>>>>> 1789326453739fd84ef50633af9b89dc200a735b
 }
 
 .p-test {
@@ -722,6 +848,11 @@ html {
 	padding-right: 25px;
 }
 
+<<<<<<< HEAD
+.c-test {
+	color: green;
+	font-size: 3.125rem;
+=======
 .c-btn {
 	font-size: 1rem;
 	letter-spacing: 0.125rem;
@@ -753,6 +884,7 @@ html {
 	letter-spacing: 0.01818em;
 	right: 7%;
 	transform: translate(0%, -38%);
+>>>>>>> 1789326453739fd84ef50633af9b89dc200a735b
 }
 
 .p-test {
@@ -772,6 +904,13 @@ html {
 
 @media screen and (min-width: 1100px) {
 
+<<<<<<< HEAD
+.c-test {
+	color: blue;
+}
+
+=======
+>>>>>>> 1789326453739fd84ef50633af9b89dc200a735b
 .p-test {
 	color: blue;
 }
@@ -784,6 +923,13 @@ html {
 
 @media screen and (min-width: 1440px) {
 
+<<<<<<< HEAD
+.c-test {
+	color: brown;
+}
+
+=======
+>>>>>>> 1789326453739fd84ef50633af9b89dc200a735b
 .p-test {
 	color: brown;
 }
