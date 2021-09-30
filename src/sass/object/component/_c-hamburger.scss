@@ -1,6 +1,14 @@
 .c-hamburger{
   padding: rem(10) rem(22);
   cursor: pointer;
+
+  @include mq(tab) {
+    display: none;
+  }
+
+  @include mq(pc) {
+    display: none;
+  }
 }
 
 .c-hamburger span{

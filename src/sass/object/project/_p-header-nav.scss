@@ -1,3 +1,43 @@
 .p-header__nav{
-  display: flex;
+  display: none;
+
+  @include mq(tab) {
+    display: flex;
+  }
+}
+
+.p-header__link{
+  line-height: rem(35);
+  letter-spacing: rem(2);
+  padding: 8px 16px;
+  display: inline-block;
+  position: relative;
+}
+
+.p-header__link--black{
+  background: $background-gray;
+  padding-left: 32px;
+  padding-right: 32px;
+}
+
+.p-header__link::after {
+  position: absolute;
+  bottom: rem(2);
+  left: 50%;
+  transform: translateX(-50%);
+  content: '';
+  width: calc(100% - 32px);
+  height: rem(1);
+  background: $accent-color1;
+  opacity: 0;
+  transition: .3s;
+}
+
+.p-header__link--black::after{
+  width: calc(100% - 64px);
+}
+
+.p-header__link:hover::after {
+  bottom: rem(5);
+  opacity: 1;
 }
