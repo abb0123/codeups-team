@@ -4,20 +4,25 @@
   <body>
     <%- include('./common/_top-header') %>
       <%- include('./parts/_c-btn',{text:'これはテストです', link:'#'}) %>
+
+
+      <% for (var i=0; i < 4; i++) { %>
+        <%- include('./parts/_c-btn',{text:'これはテストです', link:'#'}) %>
+        <% } %>
+
+
+        <div class="c-test">
+          <%- include('./parts/_c-section-title',{en:'Content', jp:'事業内容'}) %>
+
+        </div>  
+
+        <div class="c-test">
+          <%- include('./parts/_c-section-title--reverse',{en:'Works', jp:'制作実績'}) %>
+
+        </div>
+
+        <%- include('./parts/_p-news-item',{time:'2021.07.20', category:'カテゴリ', title:'記事タイトルが入ります。記事タイトルが入ります。記事タイトルが入ります。'}) %>
+
     <%- include('./common/_footer') %>
-
-
-    <% for (var i=0; i < 4; i++) { %>
-      <%- include('./parts/_c-btn',{text:'これはテストです', link:'#'}) %>
-      <% } %>
-
-
-
-      <%- include('./parts/_c-blog-title',{text:'これはタイトルです'}) %>
-      <%- include('./parts/_c-blog-title2',{text:'これはタイトル2です'}) %>
-      <%- include('./parts/_c-blog-title3',{text:'これはタイトル3です'}) %>
-      <%- include('./parts/_c-blog-text',{text:'これはテキストです'}) %>
-      <%- include('./parts/_p-blog-listNumber',{text:'これはテキストです'}) %>
-      <%- include('./parts/_p-blog-listDot',{text:'これはテキストです'}) %>
   </body>
 </html>
