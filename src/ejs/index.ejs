@@ -14,14 +14,30 @@
         <div class="c-test">
           <%- include('./parts/_c-section-title',{en:'Content', jp:'事業内容'}) %>
 
+          <div class="p-panels">
+            <% for (var i=0; i < 4; i++) { %>
+              <%- include('./parts/_p-panel',{link:'./images/common/top_content_1.jpg', text:'経営理念ページへ'}) %>
+            <% } %>
+          </div>
+          
         </div>  
 
+        <%- include('./parts/_c-breadcrumb',{text1: 'お知らせ', link:'', text2:''}) %>
+        
         <div class="c-test">
           <%- include('./parts/_c-section-title--reverse',{en:'Works', jp:'制作実績'}) %>
-
         </div>  
 
 
+        <%- include('./parts/_p-sp-nav') %>
+
+        <%- include('./parts/_p-sort') %>
+
+        <%- include('./parts/_p-works-card',{link:'./images/works/works_1.jpg', label:'カテゴリ１' , text:'CodeUps株式会社'}) %>
+
+        <div class="l-page-top-button">
+          <%- include('./parts/_c-page-top-button') %>
+        </div>
         
     <%- include('./common/_footer') %>
 

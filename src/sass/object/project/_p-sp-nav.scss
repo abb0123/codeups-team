@@ -1,0 +1,37 @@
+.p-sp-nav  {
+  width: 100%;
+  height: 100vh;
+  background-color: $background;
+  text-align: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  transform: translateX(100%);
+  transition: ease 0.3s;
+}
+
+.p-sp-nav.is-open {
+  transform: translateX(0);
+}
+
+.p-sp-nav__items {
+  padding-top: rem(209);
+  padding-bottom: rem(208);
+  height: 100vh;
+  overflow: scroll;
+}
+
+.p-sp-nav__item > a {
+  font-size: rem(16);
+  line-height: 1.4375;
+  letter-spacing: 0.125em; //2px/16px
+  width: 100%;
+  display: inline-block;
+  padding: rem(16) 0 ;
+}
+
+.p-sp-nav__item > a:hover {
+  background-color: #333;
+}

@@ -33,6 +33,16 @@ jQuery(function ($) {
   $('.navbar_toggle').on('click', function () {
     $(this).toggleClass('open');
     $('.menu').toggleClass('open');
+  }); //ドロワーメニュー
+
+  $('.js-hamburger').on('click', function () {
+    if ($('.js-hamburger').hasClass('is-open')) {
+      $(this).removeClass('is-open');
+      $('.js-drawer-menu').removeClass('is-open');
+    } else {
+      $(this).addClass('is-open');
+      $('.js-drawer-menu').addClass('is-open');
+    }
   }); // スムーススクロール (絶対パスのリンク先が現在のページであった場合でも作動)
 
   $(document).on('click', 'a[href*="#"]', function () {
