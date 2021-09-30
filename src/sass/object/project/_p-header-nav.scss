@@ -14,10 +14,11 @@
   position: relative;
 }
 
-.p-header__link--black{
-  background: $background-gray;
+.p-header__link--white{
   padding-left: 32px;
   padding-right: 32px;
+  color: $text-black;
+  background: $background-white;
 }
 
 .p-header__link::after {

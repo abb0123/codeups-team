@@ -47,7 +47,7 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
   $(window).scroll(function() {
     var top = $(window).scrollTop();
     if (100 > top) {
-      $('.p-header__inner').css('background-color', 'rgba(255,255,255,.5)');
+      $('.p-header__inner').css('background-color', 'rgba(1,1,1,.5)');
       } else {
       $('.p-header__inner').css('background-color', '#111');
     }
