@@ -578,6 +578,14 @@ summary {
 
 /* Remove all animations and transitions for people that prefer not to see them */
 
+.l-header {
+	left: 0;
+	position: fixed;
+	right: 0;
+	top: 0;
+	z-index: 10;
+}
+
 .l-inner {
 	height: inherit;
 	margin: 0 auto;
@@ -679,6 +687,49 @@ summary {
 .c-btn:focus::before,
 .c-btn:hover::before {
 	left: 0;
+}
+
+.c-hamburger {
+	cursor: pointer;
+	padding: 0.625rem 1.375rem;
+}
+
+.c-hamburger span {
+	background: #fff;
+	display: block;
+	height: 0.125rem;
+	position: relative;
+	transition: all .3s ease;
+	width: 1.875rem;
+}
+
+.c-hamburger span:nth-child(1) {
+	top: 0;
+}
+
+.c-hamburger span:nth-child(2) {
+	margin: 0.5rem 0;
+}
+
+.c-hamburger span:nth-child(3) {
+	top: 0;
+}
+
+/*アイコンのOPEN時の動き*/
+
+.c-hamburger.open span:nth-child(1) {
+	top: 0.625rem;
+	transform: rotate(45deg);
+}
+
+.c-hamburger.open span:nth-child(2) {
+	opacity: 0;
+	transform: translateY(-50%);
+}
+
+.c-hamburger.open span:nth-child(3) {
+	top: -0.625rem;
+	transform: rotate(-45deg);
 }
 
 .c-section-title {
@@ -815,6 +866,28 @@ summary {
 	content: counter(number);
 	counter-increment: number;
 	padding-right: 5px;
+}
+
+.p-header__nav {
+	display: flex;
+}
+
+.p-header__inner {
+	align-items: center;
+	background-color: rgba(225, 225, 225, 0.5);
+	display: flex;
+	justify-content: space-between;
+	padding-left: 1.375rem;
+	transition: all .3s ease;
+	z-index: 99;
+}
+
+.p-header__logo {
+	width: 4.375rem;
+}
+
+.section {
+	height: 1000px;
 }
 
 .p-news-item__category {

@@ -1,0 +1,17 @@
+.p-header__inner{
+  display: flex;
+  justify-content: space-between;
+  padding-left: rem(22);
+  align-items: center;
+  background-color: rgba(225,225,225,.5);
+  transition: all .3s ease;
+  z-index: 99;
+}
+
+.p-header__logo{
+  width: rem(70);
+}
+
+.section{
+  height: 1000px;
+}

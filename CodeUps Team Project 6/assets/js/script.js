@@ -30,9 +30,20 @@ jQuery(function ($) {
     }
   }); //ドロワーメニュー
 
-  $('.navbar_toggle').on('click', function () {
+  $('.js-hamburger').on('click', function () {
     $(this).toggleClass('open');
     $('.menu').toggleClass('open');
+  }); // MV超えたらヘッダーの色を変更
+
+  var mvh = $('メインビューのclass名').height();
+  $(window).scroll(function () {
+    var top = $(window).scrollTop();
+
+    if (100 > top) {
+      $('.p-header__inner').css('background-color', 'rgba(255,255,255,.5)');
+    } else {
+      $('.p-header__inner').css('background-color', '#111');
+    }
   }); // スムーススクロール (絶対パスのリンク先が現在のページであった場合でも作動)
 
   $(document).on('click', 'a[href*="#"]', function () {
