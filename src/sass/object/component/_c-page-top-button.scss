@@ -1,0 +1,36 @@
+.c-page-top-button {
+  position: relative;
+  display: inline-block;
+  background-color: #FFF;
+  width: rem(45);
+  height: rem(45);
+  transition: all .3s;
+}
+
+.c-page-top-button:hover {
+  background-color: #333;
+  transition: all .3s;
+}
+
+.c-page-top-button::before{
+  content: '';
+  width: rem(19);
+  height: rem(19);
+  border-top: solid 2px #333;
+  border-right: solid 2px #333;
+  transform: rotate(-45deg);
+  position: absolute;
+  top: 40%;
+  left: 28%;
+  transition: all .3s;
+}
+
+.c-page-top-button:hover::before {
+  border-top: solid 2px #fff;
+  border-right: solid 2px #fff;
+  transition: all .3s;
+}
+
+.l-page-top-button {
+  margin-left: 20px;
+}
