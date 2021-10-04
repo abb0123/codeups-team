@@ -1,0 +1,61 @@
+.p-gallery-slider {
+  width: 100%;
+  // margin: 0 0 rem(32) 0;
+}
+
+.p-gallery-slider .swiper-slide {
+  width: 100%;
+  position: relative;
+}
+
+.p-gallery-slider .swiper-slide::before {
+  padding-top: 66.93%; //251px/375px
+  display: block;
+  content: "";
+  @include mq("tab") {
+    padding-top: 53.44%; //427px/799px
+  }
+}
+
+.p-gallery-slider .swiper-slide img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+  height: 100%;
+}
+
+.p-gallery-slider .swiper-button-prev,
+.p-gallery-slider .swiper-button-next {
+  width: rem(30);
+  height: rem(30);
+  background-color: $background;
+  border-radius: 100%;
+  @include mq("tab") {
+    width: rem(50);
+    height: rem(50);
+  }
+}
+
+.p-gallery-slider .swiper-button-prev{
+  left: rem(7);
+  right: auto;
+}
+
+.p-gallery-slider .swiper-button-next {
+  left: auto;
+  right: rem(7);
+}
+
+.p-gallery-slider .swiper-button-prev::after,
+.p-gallery-slider .swiper-button-next::after {
+  font-size: rem(18);
+  font-weight: 700;
+  color: $accent-color1;
+  @include mq("tab") {
+    font-size: rem(32);
+  }
+}
+

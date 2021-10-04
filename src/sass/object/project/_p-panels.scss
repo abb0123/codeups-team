@@ -1,0 +1,7 @@
+.p-panels {
+  display: grid;
+  grid-template: auto auto / auto auto;
+  @include mq("tab") {
+    grid-template: auto / auto auto auto auto;
+  }
+}

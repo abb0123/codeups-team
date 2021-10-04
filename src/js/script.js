@@ -40,6 +40,7 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
     $('.menu').toggleClass('open');
   });
 
+<<<<<<< .merge_file_s84TY8
 
   // MV超えたらヘッダーの色を変更
   var mvh = $('メインビューのclass名').height();
@@ -53,6 +54,18 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
     }
   });
 
+=======
+  //ドロワーメニュー
+	$('.js-hamburger').on('click', function () {
+		if($('.js-hamburger').hasClass('is-open')) {
+			$(this).removeClass('is-open');
+			$('.js-drawer-menu').removeClass('is-open');
+		} else {
+			$(this).addClass('is-open');
+			$('.js-drawer-menu').addClass('is-open');
+		}
+	});
+>>>>>>> .merge_file_mYtLg9
 
   // スムーススクロール (絶対パスのリンク先が現在のページであった場合でも作動)
   $(document).on('click', 'a[href*="#"]', function () {
@@ -68,3 +81,30 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
 
 
 });
+
+
+//制作実績Swiper
+var slider = new Swiper ('.js-gallery-slider', {
+  slidesPerView: 1,
+  centeredSlides: true,
+  loop: true,
+  loopedSlides: 8, //スライドの枚数と同じ値を指定
+  navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+  },
+});
+
+//サムネイル
+var thumbs = new Swiper ('.js-gallery-thumbs', {
+  slidesPerView: 'auto',
+  initialSlide: 1,
+  centeredSlides: true,
+  loop: true,
+  slideToClickedSlide: true,
+});
+
+//4系～
+//メインとサムネイルを紐づける
+slider.controller.control = thumbs;
+thumbs.controller.control = slider;

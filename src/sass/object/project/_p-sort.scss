@@ -1,0 +1,17 @@
+.p-sort {
+  width: 100%;
+}
+
+.p-sort__tab {
+  display: inline-block;
+  font-size: rem(16);
+  line-height: 1;
+  letter-spacing: 0.125em;
+  padding: rem(3) rem(10);
+  cursor: pointer;
+}
+
+.p-sort__tab.is-active {
+  background-color: #fff;
+  color: #333;
+}

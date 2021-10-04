@@ -33,6 +33,7 @@ jQuery(function ($) {
   $('.js-hamburger').on('click', function () {
     $(this).toggleClass('open');
     $('.menu').toggleClass('open');
+<<<<<<< .merge_file_0rc8wA
   }); // MV超えたらヘッダーの色を変更
 
   var mvh = $('メインビューのclass名').height();
@@ -43,6 +44,17 @@ jQuery(function ($) {
       $('.p-header__inner').css('background-color', 'rgba(1,1,1,.5)');
     } else {
       $('.p-header__inner').css('background-color', '#111');
+=======
+  }); //ドロワーメニュー
+
+  $('.js-hamburger').on('click', function () {
+    if ($('.js-hamburger').hasClass('is-open')) {
+      $(this).removeClass('is-open');
+      $('.js-drawer-menu').removeClass('is-open');
+    } else {
+      $(this).addClass('is-open');
+      $('.js-drawer-menu').addClass('is-open');
+>>>>>>> .merge_file_Kmq2TI
     }
   }); // スムーススクロール (絶対パスのリンク先が現在のページであった場合でも作動)
 
@@ -57,4 +69,28 @@ jQuery(function ($) {
     }, time, 'swing');
     return false;
   });
-});
+}); //制作実績Swiper
+
+var slider = new Swiper('.js-gallery-slider', {
+  slidesPerView: 1,
+  centeredSlides: true,
+  loop: true,
+  loopedSlides: 8,
+  //スライドの枚数と同じ値を指定
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev'
+  }
+}); //サムネイル
+
+var thumbs = new Swiper('.js-gallery-thumbs', {
+  slidesPerView: 'auto',
+  initialSlide: 1,
+  centeredSlides: true,
+  loop: true,
+  slideToClickedSlide: true
+}); //4系～
+//メインとサムネイルを紐づける
+
+slider.controller.control = thumbs;
+thumbs.controller.control = slider;

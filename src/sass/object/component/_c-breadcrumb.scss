@@ -1,0 +1,18 @@
+.c-breadcrumb {
+	display: flex;
+}
+
+.c-breadcrumb span,
+.c-breadcrumb a {
+	font-size: rem(16);
+}
+
+.c-breadcrumb span:not(:last-child)::after {
+	content: ">";
+	vertical-align: baseline;
+	margin: 0 rem(6);
+}
+
+.c-breadcrumb span	> a {
+	text-decoration: none;
+}
