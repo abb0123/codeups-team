@@ -1,0 +1,50 @@
+.c-hamburger{
+  padding: rem(10) rem(22);
+  cursor: pointer;
+
+  @include mq(tab) {
+    display: none;
+  }
+
+  @include mq(pc) {
+    display: none;
+  }
+}
+
+.c-hamburger span{
+  position: relative;
+  display: block;
+  height: rem(2);
+  width: rem(30);
+  background: $background-white;
+  transition: all .3s ease;
+}
+
+.c-hamburger span:nth-child(1) {
+  top: 0;
+}
+
+.c-hamburger span:nth-child(2) {
+  margin: rem(8) 0;
+}
+
+.c-hamburger span:nth-child(3) {
+  top: 0;
+}
+
+/*アイコンのOPEN時の動き*/
+.c-hamburger.open span:nth-child(1) {
+  top: rem(10);
+  transform: rotate(45deg);
+}
+
+.c-hamburger.open span:nth-child(2) {
+  transform: translateY(-50%);
+  opacity: 0;
+}
+
+.c-hamburger.open span:nth-child(3) {
+  top: rem(-10);
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
