@@ -1,7 +1,7 @@
 .p-blog-listNumber{
   line-height: rem(35);
   letter-spacing: (0.4);
-  color: #fff;
+  color: $text-white;
   position: relative;
   counter-reset: number;
 }

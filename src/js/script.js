@@ -34,13 +34,7 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
 
 
 
-  //ドロワーメニュー
-  $('.js-hamburger').on('click', function () {
-    $(this).toggleClass('open');
-    $('.menu').toggleClass('open');
-  });
 
-<<<<<<< .merge_file_s84TY8
 
   // MV超えたらヘッダーの色を変更
   var mvh = $('メインビューのclass名').height();
@@ -54,7 +48,7 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
     }
   });
 
-=======
+
   //ドロワーメニュー
 	$('.js-hamburger').on('click', function () {
 		if($('.js-hamburger').hasClass('is-open')) {
@@ -65,7 +59,6 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
 			$('.js-drawer-menu').addClass('is-open');
 		}
 	});
->>>>>>> .merge_file_mYtLg9
 
   // スムーススクロール (絶対パスのリンク先が現在のページであった場合でも作動)
   $(document).on('click', 'a[href*="#"]', function () {
