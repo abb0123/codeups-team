@@ -720,7 +720,10 @@ summary {
 	transform: translate(-50%, -83%);
 }
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 1d6a8f89ee4461161a35fefc5577897df30e3f8b
 .c-section-title--reverse::before {
 	color: rgba(249, 248, 113, 0.2);
 	content: attr(title-en);
