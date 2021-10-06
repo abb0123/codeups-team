@@ -2,7 +2,7 @@
 <html lang="ja">
 <%- include('./common/_head') %>
   <body>
-    <%- include('./common/_top-header') %>
+    <%- include('./common/_header') %>
       <%- include('./parts/_c-btn',{text:'これはテストです', link:'#'}) %>
 
 
@@ -26,10 +26,12 @@
         
         <div class="c-test">
           <%- include('./parts/_c-section-title--reverse',{en:'Works', jp:'制作実績'}) %>
-        </div>  
 
+
+        </div>
 
         <%- include('./parts/_p-sp-nav') %>
+
 
         <%- include('./parts/_p-sort') %>
 
@@ -54,12 +56,19 @@
         
     <%- include('./common/_footer') %>
 
+          <%- include('./parts/_p-works-textarea',{heading:'制作のポイント', text:'テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。'}) %>
 
-      <%- include('./parts/_c-blog-title',{text:'これはタイトルです'}) %>
-      <%- include('./parts/_c-blog-title2',{text:'これはタイトル2です'}) %>
-      <%- include('./parts/_c-blog-title3',{text:'これはタイトル3です'}) %>
-      <%- include('./parts/_c-blog-text',{text:'これはテキストです'}) %>
-      <%- include('./parts/_p-blog-listNumber',{text:'これはテキストです'}) %>
-      <%- include('./parts/_p-blog-listDot',{text:'これはテキストです'}) %>
+        </div>
+
+        <div class="p-gallery">
+          <%- include('./parts/_p-gallery-slider') %>
+          <%- include('./parts/_p-gallery-thumbs') %>
+        </div>
+
+        <div class="l-page-top-button">
+          <%- include('./parts/_c-page-top-button') %>
+        </div>
+        
+    <%- include('./common/_footer') %>
   </body>
 </html>

@@ -32,11 +32,22 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
     }
   });
 
-  //ドロワーメニュー
-  $('.navbar_toggle').on('click', function () {
-    $(this).toggleClass('open');
-    $('.menu').toggleClass('open');
+
+
+
+
+  // MV超えたらヘッダーの色を変更
+  var mvh = $('メインビューのclass名').height();
+
+  $(window).scroll(function() {
+    var top = $(window).scrollTop();
+    if (100 > top) {
+      $('.p-header__inner').css('background-color', 'rgba(1,1,1,.5)');
+      } else {
+      $('.p-header__inner').css('background-color', '#111');
+    }
   });
+
 
   //ドロワーメニュー
 	$('.js-hamburger').on('click', function () {

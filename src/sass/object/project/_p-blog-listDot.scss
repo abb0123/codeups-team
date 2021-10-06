@@ -3,5 +3,17 @@
   letter-spacing: (0.4);
   color: $text-white;
   margin-left: rem(24);
-  list-style-type: disc;
+  position: relative;
+}
+
+.p-blog-listDot li::before{
+  position: absolute;
+  background: $background-white;
+  left: rem(-15);
+  top: 50%;
+  transform: translateY(-50%);
+  content: '';
+  width: rem(3);
+  height: rem(3);
+  border-radius: 90%;
 }
