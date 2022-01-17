@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ja">
+<%- include('./common/_head') %>
+  <body>
+    <%- include('./common/_header') %>
+    <%- include('./parts/_c-breadcrumb',{text1: 'ブログ記事一覧', link:'', text2:''}) %>
+    <%- include('./parts/_p-sp-nav') %>
+
+
+    <!-- ブログ一覧 -->
+    <section class="p-blog">
+
+      <!-- タブ -->
+      <div class="p-blog__tab">
+
+      </div>
+
+      <!-- ブログカード一覧 -->
+      <div class="p-blog__cards">
+        <%- include('./parts/_p-blog-cards.ejs') %>
+      </div>
+
+      <!-- ページネーション -->
+      <div class="p-blog__pagination">
+        <%- include('./parts/_p-pagination.ejs') %>
+      </div>
+    </section>
+
+    <!-- お問い合わせ -->
+    <section class="p-content__inquiry">
+      <%# include('./parts/_inquiry.ejs') %>
+    </section>
+
+    <div class="l-page-top-button">
+      <%- include('./parts/_c-page-top-button') %>
+    </div>
+
+    <%- include('./common/_footer') %>
+  </body>
+</html>
