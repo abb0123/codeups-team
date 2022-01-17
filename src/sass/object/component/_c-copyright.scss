@@ -1,0 +1,10 @@
+.c-copyright {
+  font-size: rem(11);
+  line-height: 1.6363;
+  letter-spacing: 0.10909em;
+  @include mq(tab) {
+    font-size: rem(15);
+    line-height: 2.333;
+    letter-spacing: 0.08em;
+  }
+}

@@ -1,3 +1,17 @@
-<div class="l-footer p-footer">
-  これはフッターです
-</div>
+<footer class="l-footer p-footer">
+  <div class="p-footer__inner">
+    <div class="p-footer__container">
+      <div class="p-footer__logo">
+        <a href="index.html">
+          <img src="images/common/CodeUps.svg" alt="Codeups">
+        </a>
+      </div>
+      <div class="p-footer__nav">
+        <%- include('../parts/_p-footer-nav') %>
+      </div>
+    </div>
+    <div class="p-footer__copyright">
+      <%- include('../parts/_c-copyright',{text:'2021 CodeUps Inc.'}) %>
+    </div>
+  </div>
+</footer>
