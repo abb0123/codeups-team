@@ -1,0 +1,25 @@
+.p-section-body {
+  width: 100%;
+  background-color: $background-gray;
+  padding: rem(24) rem(20) rem(21);
+}
+
+.p-section-body__title {
+  font-size: rem(20);
+  font-weight: 400;
+  line-height: calc(28.96 / 20);
+  letter-spacing: 0.1em;
+  text-align: center;
+}
+
+.p-section-body__text {
+  font-size: rem(16);
+  font-weight: 400;
+  line-height: calc(23.17 / 16);
+  letter-spacing: 0.125em;
+  margin-top: rem(24);
+}
+
+.p-section-body__button {
+  margin-top: rem(16);
+}

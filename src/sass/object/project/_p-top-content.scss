@@ -1,0 +1,28 @@
+.p-top-content {
+  width: 100%;
+  position: relative;
+  padding-top: rem(50);
+  z-index: -1;
+}
+
+.p-top-content::before {
+  content: "";
+  width: 1px;
+  height: calc(776 / 375 * 100vw);
+  background-color: #F9F871;
+  transform: rotate(-29deg);
+  position: absolute;
+  top: rem(-32);
+  left: 50%;
+  @include mq(tab) {
+    height: calc(1714 / 1280 * 100vw);
+    top: rem(-252);
+    left: 47.3%;
+    transform: rotate(-45deg);
+  }
+}
+
+.p-top-content__panels {
+  width: 100%;
+  margin-top: rem(48);
+}

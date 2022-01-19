@@ -1,0 +1,19 @@
+.p-section-contact {
+
+}
+
+.p-section-contact__body {
+  padding: 0 $padding-sp;
+}
+
+.p-section-contact__text {
+  font-size: rem(16);
+  font-weight: 400;
+  line-height: calc(23.17 / 16);
+  letter-spacing: 0.125em;
+  margin-top: rem(20);
+}
+
+.p-section-contact__button {
+  margin-top: rem(40);
+}

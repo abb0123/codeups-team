@@ -1,0 +1,86 @@
+//通常レイアウト記述
+.p-mainvisual {
+  width: 100%;
+  height: 100vh;
+	position: relative;
+}
+
+.p-mainvisual__content {
+	position: absolute;
+	width: 100%;
+	top: 50%;
+	left: 0;
+	transform: translateY(-50%);
+	text-align: center;
+	font-weight: 700;
+	color: #fff;
+	padding: 0 rem(25);
+  z-index: 2;
+}
+
+.p-mainvisual__title {
+	font-size: 2em;
+}
+
+.p-mainvisual__lead {
+	font-size: 1em;
+	margin-top: 0.6em;
+}
+
+.p-mainvisual__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.p-mainvisual__image::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #111;
+  opacity: 0.2;
+  z-index: 2;
+}
+
+//Swiperに関する記述
+//p-とswiperの間に使用場所を記述する
+.p-mainvisual-swiper {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+//ZOOMスワイパー
+@keyframes zoomUp {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.15);
+  }
+}
+
+.p-mainvisual-swiper .swiper-slide-active img,
+.p-mainvisual-swiper .swiper-slide-duplicate-active img,
+.p-mainvisual-swiper .swiper-slide-prev img {
+  animation: zoomUp 12s linear 0s;
+  animation-fill-mode: both;
+}
+.p-mainvisual-swiper .swiper-slide {
+  overflow: hidden;
+  backface-visibility: hidden;
+}
+.p-mainvisual-swiper img {
+  background-size: cover;
+  background-position: center center;
+  object-fit: cover;
+}
+
+//ページネーションカスタム
+.p-mainvisual-swiper .swiper-pagination-bullet {
+  --swiper-theme-color: #fff;
+  --swiper-pagination-bullet-size: 8px;
+  --swiper-pagination-bullet-horizontal-gap: 4px;
+}

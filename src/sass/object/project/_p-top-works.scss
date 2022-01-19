@@ -1,0 +1,33 @@
+.p-top-works {
+  position: relative;
+  padding-top: rem(49);
+  z-index: -1;
+}
+
+.p-top-works::before {
+  content: "";
+  width: 1px;
+  height: calc(1448 / 375 * 100vw);
+  background-color: #F9F871;
+  transform: rotate(15deg);
+  position: absolute;
+  top: rem(168);
+  left: 50%;
+  z-index: -1;
+  @include mq(tab) {
+    height: calc(1712.34 / 1280 * 100vw);
+    top: rem(420);
+    left: 47.3%;
+    transform: rotate(45deg);
+  }
+}
+
+.p-top-works__content {
+  margin-top: rem(48);
+}
+
+.p-top-works__image,
+.p-top-works__body {
+  width: 100vw;
+  margin: 0 calc(50% - 50vw);
+}

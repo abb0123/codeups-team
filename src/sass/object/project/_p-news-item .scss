@@ -19,6 +19,7 @@
 .p-news-item__title a{
   font-size: rem(16);
   font-weight: $font-weight-base;
+  line-height: calc(23.17/16);
   transition: color .3s ease;
 
   @include mq(tab) {

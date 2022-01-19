@@ -2,7 +2,7 @@
 
 jQuery(function ($) {
   // この中であればWordpressでも「$」が使用可能になる
-  var topBtn = $('.page-top');
+  var topBtn = $('.js-scroll-top');
   topBtn.hide(); // ボタンの表示設定
 
   $(window).scroll(function () {
@@ -62,6 +62,22 @@ jQuery(function ($) {
     }, time, 'swing');
     return false;
   });
+}); //メインビジュアルSwiper
+
+var swiper = new Swiper('.js-mainvisual-swiper', {
+  pagination: {
+    el: '.swiper-pagination'
+  },
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev'
+  },
+  loop: true,
+  autoplay: {
+    delay: 6000,
+    disableOnInteraction: false
+  },
+  spaceBetween: 1
 }); //制作実績Swiper
 
 var slider = new Swiper('.js-gallery-slider', {

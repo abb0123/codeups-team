@@ -3,69 +3,81 @@
 <%- include('./common/_head') %>
   <body>
     <%- include('./common/_header') %>
-      <%- include('./parts/_c-btn',{text:'これはテストです', link:'#'}) %>
+    
+    <%- include('./parts/_p-mainvisual') %> 
 
-
-      <% for (var i=0; i < 4; i++) { %>
-        <%- include('./parts/_c-btn',{text:'これはテストです', link:'#'}) %>
-        <% } %>
-
-
-        <div class="c-test">
-          <%- include('./parts/_c-section-title',{en:'Content', jp:'事業内容'}) %>
-
-          <div class="p-panels">
-            <% for (var i=0; i < 4; i++) { %>
-              <%- include('./parts/_p-panel',{link:'./images/common/top_content_1.jpg', text:'経営理念ページへ'}) %>
-            <% } %>
+    <section class="l-top-news p-top-news">
+      <div class="p-top-news__inner l-inner">
+        <div class="p-top-news__container">
+          <div class="p-top-news__item">
+            <%- include('./parts/_p-news-item',{time:'2022.01.18', category:'お知らせ', title:'記事タイトルが入ります。記事タイトルが入ります。記事タイトルが入ります。'}) %> 
           </div>
-          
-        </div>  
-
-        <%- include('./parts/_c-breadcrumb',{text1: 'お知らせ', link:'', text2:''}) %>
-        
-        <div class="c-test">
-          <%- include('./parts/_c-section-title--reverse',{en:'Works', jp:'制作実績'}) %>
-
-
+          <div class="p-top-news__button">
+            <%- include('./parts/_c-btn',{link:"#", text:'すべて見る'}) %> 
+          </div>
         </div>
+      </div>
+    </section>
 
-        <%- include('./parts/_p-sp-nav') %>
+    <section class="l-top-content p-top-content">
+      <div class="p-top-content__head">
+        <%- include('./parts/_c-section-title',{en:'Content', jp:'事業内容'}) %>
+      </div>
+      <div class="p-top-content__panels">
+        <%- include('./parts/_p-panels') %>
+      </div>
+    </section>
 
-
-        <%- include('./parts/_p-sort') %>
-
-        <%- include('./parts/_p-works-card',{link:'./images/works/works_1.jpg', label:'カテゴリ１' , text:'CodeUps株式会社'}) %>
-
-        <div class="l-inner">
-
-          <%- include('./parts/_c-label-large',{text:'おすすめ記事'}) %>
-
-          <%- include('./parts/_p-works-textarea',{heading:'制作のポイント', text:'テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。'}) %>
-
+    <section class="l-top-works p-top-works">
+      <div class="p-top-works__inner l-inner">
+        <div class="p-top-works__head">
+          <%- include('./parts/_c-section-title',{en:'Works', jp:'制作実績'}) %>
         </div>
-
-        <div class="p-gallery">
-          <%- include('./parts/_p-gallery-slider') %>
-          <%- include('./parts/_p-gallery-thumbs') %>
+        <div class="p-top-works__content">
+          <div class="p-top-works__image">
+            <img src="../images/common/top_works_1.jpg" alt="">
+          </div>
+          <div class="p-top-works__body">
+            <%- include('./parts/_p-section-body',{title:'メインタイトルが入ります。',text:'テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。'}) %>
+          </div>
         </div>
+      </div>
+    </section>
 
-        <div class="l-page-top-button">
-          <%- include('./parts/_c-page-top-button') %>
+    <section class="l-top-overview p-top-overview">
+      <div class="p-top-overview__inner l-inner">
+        <div class="p-top-overview__head">
+          <%- include('./parts/_c-section-title',{en:'Overview', jp:'企業概要'}) %>
         </div>
-        
-    <%- include('./common/_footer') %>
-
-          <%- include('./parts/_p-works-textarea',{heading:'制作のポイント', text:'テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。'}) %>
-
+        <div class="p-top-overview__content">
+          <div class="p-top-overview__image">
+            <img src="../images/common/top_overview_1.jpg" alt="">
+          </div>
+          <div class="p-top-overview__body">
+            <%- include('./parts/_p-section-body',{title:'メインタイトルが入ります。',text:'テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。'}) %>
+          </div>
         </div>
+      </div>
+    </section>
 
-        <div class="p-gallery">
-          <%- include('./parts/_p-gallery-slider') %>
-          <%- include('./parts/_p-gallery-thumbs') %>
+    <section class="l-top-blog p-top-blog">
+      <div class="p-top-blog__inner l-inner">
+        <div class="p-top-blog__head">
+          <%- include('./parts/_c-section-title',{en:'Blog', jp:'ブログ'}) %>
         </div>
+        <div class="p-top-blog__cards">
+          <%- include('./parts/_p-blog-card',{img: 'blog_9.jpg', link: '#', title:'タイトルが入ります。タイトルが入ります。', text:'説明文が入ります。説明文が入ります。説明文が入ります。', tag: 'カテゴリ', date: '2021.07.20'}) %>
+          <%- include('./parts/_p-blog-card',{img: 'blog_1.jpg', link: '#', title:'タイトルが入ります。タイトルが入ります。', text:'説明文が入ります。説明文が入ります。説明文が入ります。', tag: 'カテゴリ', date: '2021.07.20'}) %>
+          <%- include('./parts/_p-blog-card',{img: 'blog_2.jpg', link: '#', title:'タイトルが入ります。タイトルが入ります。', text:'説明文が入ります。説明文が入ります。説明文が入ります。', tag: 'カテゴリ', date: '2021.07.20'}) %>
+        </div>
+      </div>
+    </section>
 
-        <div class="l-page-top-button">
+    <section class="l-top-contact p-top-contact">
+      <%- include('./parts/_p-section-contact') %> 
+    </section>
+    
+        <div class="l-scroll-top p-scroll-top js-scroll-top">
           <%- include('./parts/_c-page-top-button') %>
         </div>
         
