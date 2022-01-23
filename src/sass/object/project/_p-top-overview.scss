@@ -1,0 +1,13 @@
+.p-top-overview {
+  padding-top: rem(49);
+}
+
+.p-top-overview__content {
+  margin-top: rem(48);
+}
+
+.p-top-overview__image,
+.p-top-overview__body {
+  width: 100vw;
+  margin: 0 calc(50% - 50vw);
+}

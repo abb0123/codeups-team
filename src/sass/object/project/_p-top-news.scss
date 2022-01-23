@@ -1,0 +1,21 @@
+.p-top-news {
+  padding: rem(24) 0 rem(101);
+}
+
+.p-top-news__container {
+  @include mq(tab) {
+    display: flex;
+  }
+}
+
+.p-top-news__button {
+  line-height: 1;
+  margin-top: rem(28);
+  @include mq(tab) {
+    margin-top: 0;
+    margin-left: rem(48);
+    flex: 0 0 13%;
+    max-width: rem(134);
+    width: 100%;
+  }
+}

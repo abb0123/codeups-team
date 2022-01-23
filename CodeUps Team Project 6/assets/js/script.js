@@ -2,7 +2,7 @@
 
 jQuery(function ($) {
   // この中であればWordpressでも「$」が使用可能になる
-  var topBtn = $('.page-top');
+  var topBtn = $('.js-scroll-top');
   topBtn.hide(); // ボタンの表示設定
 
   $(window).scroll(function () {
@@ -30,11 +30,11 @@ jQuery(function ($) {
     }
   }); // MV超えたらヘッダーの色を変更
 
-  var mvh = $('メインビューのclass名').height();
+  var mvh = $('.js-top-mainvisual').height();
   $(window).scroll(function () {
     var top = $(window).scrollTop();
 
-    if (100 > top) {
+    if (mvh > top) {
       $('.p-header__inner').css('background-color', 'rgba(1,1,1,.5)');
     } else {
       $('.p-header__inner').css('background-color', '#111');
@@ -62,6 +62,22 @@ jQuery(function ($) {
     }, time, 'swing');
     return false;
   });
+}); //メインビジュアルSwiper
+
+var swiper = new Swiper('.js-mainvisual-swiper', {
+  pagination: {
+    el: '.swiper-pagination'
+  },
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev'
+  },
+  loop: true,
+  autoplay: {
+    delay: 6000,
+    disableOnInteraction: false
+  },
+  spaceBetween: 1
 }); //制作実績Swiper
 
 var slider = new Swiper('.js-gallery-slider', {

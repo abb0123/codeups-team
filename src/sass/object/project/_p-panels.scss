@@ -1,6 +1,6 @@
 .p-panels {
   display: grid;
-  grid-template: auto auto / auto auto;
+  grid-template: 50% 50% / 50% 50%;
   @include mq("tab") {
     grid-template: auto / auto auto auto auto;
   }
