@@ -30,11 +30,11 @@ jQuery(function ($) {
     }
   }); // MV超えたらヘッダーの色を変更
 
-  var mvh = $('メインビューのclass名').height();
+  var mvh = $('.js-top-mainvisual').height();
   $(window).scroll(function () {
     var top = $(window).scrollTop();
 
-    if (100 > top) {
+    if (mvh > top) {
       $('.p-header__inner').css('background-color', 'rgba(1,1,1,.5)');
     } else {
       $('.p-header__inner').css('background-color', '#111');

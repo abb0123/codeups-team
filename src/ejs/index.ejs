@@ -4,7 +4,9 @@
   <body>
     <%- include('./common/_header') %>
     
-    <%- include('./parts/_p-mainvisual') %> 
+    <div class="p-top-mainvisual js-top-mainvisual">
+      <%- include('./parts/_p-mainvisual') %> 
+    </div>
 
     <section class="l-top-news p-top-news">
       <div class="p-top-news__inner l-inner">
@@ -13,7 +15,7 @@
             <%- include('./parts/_p-news-item',{time:'2022.01.18', category:'お知らせ', title:'記事タイトルが入ります。記事タイトルが入ります。記事タイトルが入ります。'}) %> 
           </div>
           <div class="p-top-news__button">
-            <%- include('./parts/_c-btn',{link:"#", text:'すべて見る'}) %> 
+            <%- include('./parts/_c-news-btn',{link:"#", text:'すべて見る'}) %> 
           </div>
         </div>
       </div>
@@ -31,7 +33,7 @@
     <section class="l-top-works p-top-works">
       <div class="p-top-works__inner l-inner">
         <div class="p-top-works__head">
-          <%- include('./parts/_c-section-title',{en:'Works', jp:'制作実績'}) %>
+          <%- include('./parts/_c-section-title--reverse',{en:'Works', jp:'制作実績'}) %>
         </div>
         <div class="p-top-works__content">
           <div class="p-top-works__image">
@@ -63,7 +65,7 @@
     <section class="l-top-blog p-top-blog">
       <div class="p-top-blog__inner l-inner">
         <div class="p-top-blog__head">
-          <%- include('./parts/_c-section-title',{en:'Blog', jp:'ブログ'}) %>
+          <%- include('./parts/_c-section-title--reverse',{en:'Blog', jp:'ブログ'}) %>
         </div>
         <div class="p-top-blog__cards">
           <%- include('./parts/_p-blog-card',{img: 'blog_9.jpg', link: '#', title:'タイトルが入ります。タイトルが入ります。', text:'説明文が入ります。説明文が入ります。説明文が入ります。', tag: 'カテゴリ', date: '2021.07.20'}) %>
